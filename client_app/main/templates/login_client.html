@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client App 1 - Login via SSO</title>
+  <style>
+    /* Reset default styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Center the login box */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Login box styling */
+    .login-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 350px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+      font-size: 24px;
+    }
+
+    /* SSO button styling */
+    .sso-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #007bff;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .sso-button:hover {
+      background: #0056b3;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Client App 1</h2>
+    <!-- This link/button should point to your client app's login view that redirects to the SSO server -->
+    <a href="/login/" class="sso-button">Login via SSO</a>
+  </div>
+</body>
+</html>
